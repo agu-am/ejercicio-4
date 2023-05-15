@@ -11,7 +11,7 @@ const MyDeformedArray = [
 ];
 
 const MyStudents = [
-    ...MyArray.map(({ name, title, buttontext, avatar }) => ({ name, title, buttontext, avatar })),
+    ...MyArray,
     ...MyDeformedArray.map(({ firstName: name, title, buttontext, icon: avatar }) => ({ name, title, buttontext, avatar }))
 ];
 
